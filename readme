@@ -1,0 +1,21 @@
+To run the code: 
+Import class and create object. Sample code:
+	from autoML import AutoRegressor
+	import time
+	import numpy as np
+	ar = autoRegressor(trainCsvFile=csvFile, testCsvFile=csvFileTest, yLabel=yLabel)
+	ar.preProcessDataUsingPandas()
+	ar.splitter()
+	ar.lasso()
+
+Here trainCsvFile is filename training data csv file, testCsvFile is filename of test data csv file,
+yLabel is the label of the target column in the training data csv file
+
+sample test.py file is given.
+
+
+Details about team member:
+
+Jagadeesha : Preprocessing, Feature Encoding 
+Ebin : Feature Reduction
+Nagma and Vivek: Hyperoptimisation and Model Evaluation
